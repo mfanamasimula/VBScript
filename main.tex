@@ -1,0 +1,131 @@
+\documentclass[a4paper,12pt]{report}
+\addtolength{\oddsidemargin}{-1.cm}
+\addtolength{\textwidth}{2cm}
+\addtolength{\topmargin}{-2cm}
+\addtolength{\textheight}{3.5cm}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\makeindex
+
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{makeidx}
+\usepackage{hyperref}
+\usepackage{verbatim}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+
+% define the title
+\author{Team Lima}
+\title{ Assignment 1}
+\begin{document}
+\setlength{\parskip}{6pt}
+
+% generates the title
+\begin{titlepage}
+
+\begin{center}
+% Upper part of the page       
+  
+\textsc{\LARGE Department of Computer Science}\\[1.5cm]
+\textsc{\Large COS 301 - Mini Project}\\[0.5cm]
+% Title
+\HRule \\[0.4cm]
+{ \huge \bfseries Architectural Specification}\\[0.4cm]
+\HRule \\[0.4cm]
+% Author and supervisor
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+Tshepo {Malesela}
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Student number:} \\
+u14211582
+\end{flushright}
+\end{minipage}
+
+\vfill
+
+{\large \today}
+\end{center}
+\end{titlepage}
+\footnotesize
+\normalsize
+
+\renewcommand{\thesection}{\arabic{section}}
+
+\begin{center}
+\tableofcontents
+\footnotesize
+\normalsize  
+\end{center}
+
+\renewcommand{\thesection}{\arabic{section}}
+\newpage
+\begin{center}
+	\textsc{\LARGE Architectural Requirement Specification}\\[1.5cm]
+	\textsc{\Large Team VbScript github repository link}\\[0.5cm]
+	For further references see \href{https://github.com/mfanamasimula/VBScript}{gitHub}.
+	\today
+\end{center}
+\newpage
+\subsection{Architectural Scope}
+\begin{itemize}
+	\item The System should be accessable at anytime while the user is on campus.
+	\item The server that host the system and the database is always on.
+	\item The ability to navigate a given destination on campus
+	\item The system must know your current location.
+	\item The system must be able to to give ...
+	\item The system need to be able to host all the users on campus.
+	\item Administrative users have more access to the system have CRUD capabilties on events.
+	\item Each event on the system must have a destination and multiple ways of reaching that destination through the navigation.
+	\item The system must have the ability to notify users of current event.
+	\item Users have the ability to set a route based on user constraints such as routes with less pedestrian trafic. 
+\end{itemize}
+\newpage
+\subsection{External Interface Requirements}
+\newpage
+\subsection{Performance Requirements}
+\newpage
+\subsection{Design Constraints}
+\newpage
+\subsection{Software System Attributes}
+\newpage
+\subsection{UML Design}
+\subsubsection{Domain Model}
+\subsubsection{Package Diagrams}
+\textbf{Navigation Module} \\
+\textbf{Events}\\
+\textbf{Notification Module}\\
+\textbf{GIS Module}
+\subsubsection{Class diagrams}
+\textbf{Navigation Module}\\
+\textbf{Events}\\
+\textbf{Notification Module}\\
+\textbf{GIS Module}
+\subsubsection{Package Diagrams}
+\textbf{Navigation Module}\\
+\textbf{Events}\\
+\textbf{Notification Module}\\
+\textbf{GIS Module}
+\subsubsection{Activity Diagrams}
+\textbf{Navigation Module}\\
+\textbf{Events}\\
+\textbf{Notification Module}\\
+\textbf{GIS Module}\\
+
+\newpage
+\subsection{Design Patterns}
+\newpage
+\subsection{Technology}
+\newpage
+\subsection{Quality and Feasability Design}
+\end{document}
