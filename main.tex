@@ -96,8 +96,145 @@ u14197520
 \end{itemize}
 \newpage
 \subsection{External Interface Requirements}
+	\subsubsection{User Interface}
+		\begin{itemize}
+			\item Standards for ...\\
+			
+			Fonts -  Verdana \\
+			Images - square, ratio 1:1 \\
+			Buttons labels - Button( HTML input element ) , LinkButton and ImageButton \\
+			Color schemes - UP Colors , white , blue and red \\
+			Field tabbing sequence - row by row \\
+			
+			\item Standard buttons, functions and navigation links that will
+			appear on every screen. \\
+			
+				- Help button \\
+				- Search button \\
+				- Users: Login / Logout link \\
+				- Navigation: always display users current location. \\
+				- Events: button to navigate to current events on campus. \\\\
+				
+			\item Shortcut keys.\\
+			
+				Mobile Devices ( Android / iOS )  
+				\begin{itemize}
+					\item Volume UP = Open textbox to search New direction
+					\item Volume DOWN = View events on campus 
+				\end{itemize}
+				    
+				Desktop Computer
+				\begin{itemize}
+					\item Ctrl + F = Open textbox to search New direction
+					\item Ctrl + E = View events on campus 
+					\item Ctrl + Z = logout / logOff
+					\item Ctrl + Alt + H = Help
+	
+				\end{itemize}
+				
+			\item Message dispaly conventions \\
+				- Dialog box: Error message , usage/help message \\ 
+				- Notification icon: 
+				\begin{itemize}
+				\item Display on login, if user have not subscribe to recieve  notifications either via SMS or email.
+				\item Alert user if any new events have been added or is about to take place.
+				\end{itemize}
+			
+				- Status bar: Dispaly users current location at all times. \\
+			
+			\item Accommodation for visually impaired users.\\
+			
+				1.) Allowances For Enlarged Text: Stylesheet with large font size whose layout does not break 
+				when text-only zoom is enabled in browser. \\
+				
+				2.) Use Keyboard Shortcuts to Aid Navigation: Possibly being able to nevigate the whole application 
+				with the use of only shortcut keys. \\
+				
+				3.) Contrast is Key: Bold text on low contrust items and user ability to highlight text with mouse 
+				( quick trick to increase contrast and to aid visual focus ). \\
+		
+		\end{itemize}
+	\subsubsection{Hardware Interface}
+		\begin{itemize}
+		\item Supported Device type \\
+		- WiFi supported divice \\
+		- Precise location (GPS and network-based) support \\
+		\item Data and control interaction between the software and hardware \\ 
+		
+	
+		\item Communication protocol \\
+		- 
+		- JSON (JavaScript Object Notation) \\
+		- Ajax (Asynchronous JavaScript and XML) \\
+		\end{itemize} 
+	\subsubsection{Software Interface}
+		\begin{itemize}
+			\item Databases: \\
+			- Databases: MongoDB \\
+			- Operating Systems:  \\
+			
+			\item Operating Systems: \\
+			Mobile devices: \\
+			- Android 4.2 (Jelly Bean) or later \\
+			- iOS 8 or later \\
+			
+			Desktop:\\
+			- accessible through Web browsers ( Google chrome or Mozilla Firefox ) @www.nav.up.ac.za 
+			
+			
+		\end{itemize}
+		
+		
+		 
+	\subsubsection{Communicatons Interface}
 \newpage
 \subsection{Performance Requirements}
+	
+		\subsubsection{Response Time}
+		Support 90000 Guests, users and admin.\\
+		Users consisting of students, lectures, and university employees.\\
+		The system should be able to withhold the following performance requirement:\\
+		- 95 percent of all the time (excluding Route Navigation response) the system should respond within 5 seconds.\\
+		- Less than 10 seconds response time for normal expected route navigation during more than 60 percent of the 
+		time as depicted by conditions on campus.\\
+		- Atmost 20 seconds allocated for Route Navigation response time, at which Error messages for system failure are
+		issured eg "Navigation taking longer then expected"
+		
+		\subsubsection{Workload}
+		\begin{table}[h!]
+			\centering
+			\caption{User scenario statistics.}
+			\label{tab:table1}
+			\begin{tabular}{|c|c|c|c|}
+				 \hline
+				Scenario & Daily Total & Pages & Think Time \\
+				\hline
+				New user/Guest & 500 & Register, Login & 1 min \\
+				\hline
+				Looking for fun & 2500 & Events, Navigation & 25 seconds\\
+				\hline
+				Touring Campus & 150 & Points of interest, Navigation & 25 seconds \\
+				\hline
+				Lost on Campus & 4500 & Navigation & 15 seconds\\
+				\hline
+			\end{tabular}
+			
+			\bigskip
+			Figure : User Traffic \\
+			\begin{tabular}{l}
+				
+				\includegraphics{workLoad.png}
+				
+			\end{tabular}
+		
+		\end{table}
+	
+		
+		\subsubsection{Platform}
+		 Not specific. Open to all systems that have WiFi support integration with functional requirement to enable 
+		 GPS ( Global Positioning System ) operations. This include standard navigation features such as good graphics 
+		 card for mapping directions in anyformat 2 or 3 dimensonal. 
+
 \newpage
 \subsection{Design Constraints}
 \newpage
