@@ -42,10 +42,9 @@
 \begin{minipage}{0.4\textwidth}
 \begin{flushleft} \large
 \begin{flushleft} \large
-					\emph{Author:}\\
+					\emph{Authors:}\\
 					Tshepo {Malesela}\\
 					Mfana Masimula\\
-					Khodani Mufamadi\\
 					Lebelo Tlou\\
 					Wandera Henry\\
 					Mhlongo Mandla\\
@@ -56,7 +55,6 @@
 					\emph{Student number:} \\
 					14211582\\
 					12077713\\
-					14197520\\
 					15209190\\
 					17253129\\
 					29630135
@@ -85,22 +83,22 @@
 \begin{center}
 	\textsc{\LARGE Architectural Requirement Specification}\\[1.5cm]
 	\textsc{\Large Team VbScript github repository link}\\[0.5cm]
-	For further references see \href{https://github.com/mfanamasimula/VBScript}{gitHub}.
+	For further references see \href{https://github.com/mfanamasimula/VBScript}{Github}
 	\today
 \end{center}
 \newpage
 \subsection{Architectural Scope}
 \begin{itemize}
-	\item The System should be accessable at anytime while the user is on campus.
+	\item The System should be accessible at anytime while the user is on campus.
 	\item The server that host the system and the database is always on.
 	\item The ability to navigate a given destination on campus
 	\item The system must know your current location.
 	\item The system must be able to to give ...
 	\item The system need to be able to host all the users on campus.
-	\item Administrative users have more access to the system have CRUD capabilties on events.
+	\item Administrative users have more access to the system have CRUD capabilities on events.
 	\item Each event on the system must have a destination and multiple ways of reaching that destination through the navigation.
 	\item The system must have the ability to notify users of current event.
-	\item Users have the ability to set a route based on user constraints such as routes with less pedestrian trafic. 
+	\item Users have the ability to set a route based on user constraints such as routes with less pedestrian traffic. 
 \end{itemize}
 \newpage
 \subsection{External Interface Requirements}
@@ -241,12 +239,31 @@
 		\subsubsection{Platform}
 		 Not specific. Open to all systems that have WiFi support integration with functional requirement to enable 
 		 GPS ( Global Positioning System ) operations. This include standard navigation features such as good graphics 
-		 card for mapping directions in anyformat 2 or 3 dimensonal. 
+		 card for mapping directions in any format 2 or 3 dimensonal. 
 
 \newpage
 \subsection{Design Constraints}
+\begin{itemize}
+\item The system will only use the Wifi network.
+\item The system should be as small as possible, preferably less than 150MB.
+\item The system should be user friendly and have a pleasant user interface.
+\item The system will be accessible on smart devices mainly using IOS and Android platforms.
+\item The system should only perform updates at night when the system work load is presumably significantly less.
+\end{itemize}
+
 \newpage
-\subsection{Software System Attributes}
+\subsection{Software System Attributes} 
+\subsubsection{Maintainability}
+The system should be simple and easily understandable so as to readily facilitate upgrading of the software when necessary. This will be achieved by using the latest available software at our disposal. A modular design will allow parts of the system to be maintained with affecting the whole system.
+\subsubsection{Usability}
+A short tutorial must be provided to the user showing the capabilities of the system and how it must be used. This must be in straight forward, easy to learn manner. The state in which the application is closed must be saved. The system must provide suggestions to the user aswell as a help option should the user get lost. The system should allow the user to choose from a list of languages to use for interaction(voice command could added at a later stage). Deploy a friendly game-like interface that'll cater for all age groups.
+\subsubsection{Scalability}
+The system should still be able to perform optimally even under huge work load and traffic. If the system reaches a bottleneck, it should disable "nice to have" feature and only provide the core basic functionality. 
+\subsubsection{Reliability}
+The system should be able to check for common requests(prospective student looking for the CSC) and load the directly from the server therefore minimising the traffic to the server. The system should continuously perform back-ups in the event that the system crashes or the generators don't kick in quick enough when a power failure occurs. The system should provide suggestions close to the user input if the input searched for is not found. If there are multiple paths to a destinations the system must let the user know about this but the shortest path must be the one suggested to the user.
+\subsubsection{Availability}
+The system should be available in times where most users are presumed to be on campus(07h00-18h00) aswell as big days on the University calender, UP birthday, Open Day etc.
+
 \newpage
 \subsection{UML Design}
 \subsubsection{Domain Model}
