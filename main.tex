@@ -312,14 +312,15 @@ The system should be available in times where most users are presumed to be on c
     \caption{Domain Model Class Diagram}
 		 \label{fig:R2DomainModel}
 \end{figure}
-\subsubsection{Package Diagrams}
-\textbf{Navigation Module} \\
-\textbf{Events}\\
-\textbf{Notification Module}\\
-\textbf{Users Module}
+
 	\subsubsection{Class diagrams}
 	\textbf{Navigation Module}\\
 	\textbf{Events}\\
+	\begin{figure}[h!]
+	\includegraphics[width=\linewidth]{./events/EventModuleClassDiagram.jpg}
+         \caption{Events class diagram}
+			 \label{fig:Event Module}
+	\end{figure}
 	\textbf{Notification Module}\\
 	\textbf{Users Module}\\\\
 	\begin{figure}[h!]
@@ -327,19 +328,61 @@ The system should be available in times where most users are presumed to be on c
 		\caption{Users Class diagram}
 		\label{fig:Users Class diagram}
 	\end{figure}
+	\subsubsection{Sequence diagrams}
+	\textbf{Events Module}
+\begin{figure}[h!]
+	\includegraphics[width=\linewidth]{./events/UserSequenceDiagramEvents.jpg}
+    \caption{User sequence diagram}
+		 \label{fig:1}
+\end{figure}
+\includegraphics[width=\linewidth]{./events/adminSeq.jpg}
+    \caption{User sequence diagram}
+		 \label{fig:1}
+\end{figure}
 	\subsubsection{Use Case Diagrams}
 	\textbf{Navigation Module}\\
 	\textbf{Events}\\
+\begin{figure}[h!]
+	\includegraphics[width=\linewidth]{./events/User-list-all-events-on-the-system.jpg}
+    \caption{User List all event}
+		 \label{fig:UC1}
+\end{figure}
+\begin{figure}[h!]
+	\includegraphics[width=\linewidth]{./events/administrator-user-add-new-event.jpg}
+    \caption{Amnin Adds event}
+		 \label{fig:UC3}
+		 \begin{figure}[h!]
+	\includegraphics[width=\linewidth]{./events/Administrator-user-edit-event-on-the-system.jpg}
+    \caption{Amnin edits event}
+		 \label{fig:UC3}
+\end{figure}
 	\textbf{Notification Module}\\
 	\textbf{Users Module}\\\\
 	\begin{figure}[h!]
 		\includegraphics[width=\linewidth]{usecase.png}
-		\caption{Users Use case diagram}
-		\label{fig:Users Usecase diagram}
+		\caption{Admin deletes or edits event}
+		\label{fig:UC4}
 	\end{figure}
 		\subsubsection{Activity Diagrams}
 	\textbf{Navigation Module}\\
 	\textbf{Events}\\
+	\begin{figure}[h!]
+	\includegraphics[width=\linewidth]{./events/UserListsEvents.jpg}
+    \caption{User List events}
+		 \label{fig:1}
+\end{figure}
+\includegraphics[width=\linewidth]{./events/EventSelectionActivityDiagram.jpg}
+    \caption{User selects event}
+		 \label{fig:2}
+\end{figure}
+\includegraphics[width=\linewidth]{./events/AdminAddEventActivityDiagram.jpg}
+    \caption{Admin user adds event}
+		 \label{fig:3}
+\end{figure}
+\includegraphics[width=\linewidth]{./events/AdminChangeDeleteEventActivity.jpg}
+    \caption{Admin can delete and change events}
+		 \label{fig:4}
+\end{figure}
 	\textbf{Notification Module}\\
 	\textbf{Users Module}\\
 	\begin{figure}[h!]
